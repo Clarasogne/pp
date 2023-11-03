@@ -17,9 +17,16 @@
     }
     </style>
 </head>
-<?php require("session.php");
-require_once("conexion.php");
+<?php 
+require("session.php");
+require("conexion.php");
 $asd = new BaseDeDatos();
-$asd->getClasesProfesor($_SESSION["usuario"]);
+$asd->mostrarTituloClase($_GET["id"]);
+
+
 ?>
-<a href="logout.php">Salir</a>
+<a href="crearexamen.php" class="tarjeta-enlace">
+<div class ="tarjeta">
+    <h2> Nuevo Examen </h2>
+</div>
+</a>

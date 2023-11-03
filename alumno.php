@@ -20,6 +20,6 @@
 <?php require("session.php");
 require_once("conexion.php");
 $asd = new BaseDeDatos();
-$asd->getClasesProfesor($_SESSION["usuario"]);
+$asd->getClasesAlumno($_SESSION["usuario"]);
 ?>
 <a href="logout.php">Salir</a>
